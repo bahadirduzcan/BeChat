@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFF67107-D569-49A2-A672-69E4E55102EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chat_v1._0</RootNamespace>
+    <AssemblyName>Chat_v1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dosyalar\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ana_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ana_sayfa.Designer.cs">
+      <DependentUpon>ana_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanti_kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baglanti_kontrol.Designer.cs">
+      <DependentUpon>baglanti_kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="email_degis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="email_degis.Designer.cs">
+      <DependentUpon>email_degis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hakkimda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkimda.Designer.cs">
+      <DependentUpon>hakkimda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parola_degis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parola_degis.Designer.cs">
+      <DependentUpon>parola_degis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil_bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil_bilgileri.Designer.cs">
+      <DependentUpon>profil_bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil_bilgileri_ben.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil_bilgileri_ben.Designer.cs">
+      <DependentUpon>profil_bilgileri_ben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifremi_unuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremi_unuttum.Designer.cs">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telefon_degis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telefon_degis.Designer.cs">
+      <DependentUpon>telefon_degis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye.Designer.cs">
+      <DependentUpon>uye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yas_degis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yas_degis.Designer.cs">
+      <DependentUpon>yas_degis.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ana_sayfa.resx">
+      <DependentUpon>ana_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baglanti_kontrol.resx">
+      <DependentUpon>baglanti_kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="email_degis.resx">
+      <DependentUpon>email_degis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkimda.resx">
+      <DependentUpon>hakkimda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parola_degis.resx">
+      <DependentUpon>parola_degis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil_bilgileri.resx">
+      <DependentUpon>profil_bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil_bilgileri_ben.resx">
+      <DependentUpon>profil_bilgileri_ben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremi_unuttum.resx">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telefon_degis.resx">
+      <DependentUpon>telefon_degis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye.resx">
+      <DependentUpon>uye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="yas_degis.resx">
+      <DependentUpon>yas_degis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bahadir.gif" />
+    <None Include="Resources\buyut.png" />
+    <None Include="bin\Debug\KullaniciResmi\Bahax41.png" />
+    <Content Include="ico.ico" />
+    <None Include="Resources\NoWifi.png" />
+    <None Include="Resources\new-uye.png" />
+    <None Include="Resources\uncheck.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\text.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\Baha.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

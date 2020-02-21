@@ -1,0 +1,5 @@
+Admin Menü
+Ban ayarı (Süreli Ban Ekle)
+Profil Resmi Değiştirme
+Kişi "yazıyor..." eklentisi getir
+Özel Mesaj Geldiğinde sağ alttan bildirim gelsin
